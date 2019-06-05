@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
+    <script src="http://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+  </head>
+
+  <body>
+    <div style="width: 100%; max-height: 500px;" class="ct-chart ct-perfect-fourth"></div>
+  </body>
+
+  <script>
+    var data = {
+      labels: ['JDS Labs Atom',
+        'Massdrop THX 789',
+        'Schiit Magni 3',
+        'JDS Labs O2',
+        'Topping DX3Pro',
+        'Monoprice Liquid Spark',
+        'Chord Mojo',
+        'Monoprice Monolith THX Portable',
+        'IFI Nano iDSD Black',
+      ],
+      series: [
+        [124, 123, 123, 121, 117, 114, 112, 107, 102],
+      ]
+    };
+
+    new Chartist.Bar('.ct-chart', data);
+
+  </script>
+</html>
