@@ -9,9 +9,23 @@
     <div style="width: 100%; max-height: 500px;" class="ct-chart ct-perfect-fourth"></div>
   </body>
 
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .ct-series-a .ct-bar {
+      /* Colour of your bars */
+      stroke: blue;
+      /* The width of your bars */
+      stroke-width: 100px;
+    }
+  </style>
+
   <script>
     var data = {
-      labels: ['JDS Labs Atom',
+      labels: [
+        'JDS Labs Atom',
         'Massdrop THX 789',
         'Schiit Magni 3',
         'JDS Labs O2',
